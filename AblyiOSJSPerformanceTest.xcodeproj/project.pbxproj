@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011CDC8AC2675AD527BB20C6 /* Pods_AblyiOSJSPerformanceTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82EB37C3D266BC86EA097E6 /* Pods_AblyiOSJSPerformanceTest.framework */; };
+		D367DC8F203ABD59005ECDF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D367DC8E203ABD59005ECDF2 /* AppDelegate.m */; };
+		D367DC92203ABD59005ECDF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D367DC91203ABD59005ECDF2 /* ViewController.m */; };
+		D367DC95203ABD59005ECDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D367DC93203ABD59005ECDF2 /* Main.storyboard */; };
+		D367DC97203ABD59005ECDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D367DC96203ABD59005ECDF2 /* Assets.xcassets */; };
+		D367DC9A203ABD59005ECDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D367DC98203ABD59005ECDF2 /* LaunchScreen.storyboard */; };
+		D367DC9D203ABD59005ECDF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D367DC9C203ABD59005ECDF2 /* main.m */; };
+		D367DCA4203AC092005ECDF2 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D367DCA3203AC092005ECDF2 /* index.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C203DAA9BE468F53B20F4B1 /* Pods-AblyiOSJSPerformanceTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AblyiOSJSPerformanceTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AblyiOSJSPerformanceTest/Pods-AblyiOSJSPerformanceTest.release.xcconfig"; sourceTree = "<group>"; };
+		935FADD1692E2D6220F9088D /* Pods-AblyiOSJSPerformanceTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AblyiOSJSPerformanceTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AblyiOSJSPerformanceTest/Pods-AblyiOSJSPerformanceTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C82EB37C3D266BC86EA097E6 /* Pods_AblyiOSJSPerformanceTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AblyiOSJSPerformanceTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D367DC8A203ABD59005ECDF2 /* AblyiOSJSPerformanceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AblyiOSJSPerformanceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D367DC8D203ABD59005ECDF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D367DC8E203ABD59005ECDF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D367DC90203ABD59005ECDF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D367DC91203ABD59005ECDF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D367DC94203ABD59005ECDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D367DC96203ABD59005ECDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D367DC99203ABD59005ECDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D367DC9B203ABD59005ECDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D367DC9C203ABD59005ECDF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D367DCA3203AC092005ECDF2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D367DC87203ABD59005ECDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011CDC8AC2675AD527BB20C6 /* Pods_AblyiOSJSPerformanceTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73D55CE4C38E7F7B8B7980F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				935FADD1692E2D6220F9088D /* Pods-AblyiOSJSPerformanceTest.debug.xcconfig */,
+				8C203DAA9BE468F53B20F4B1 /* Pods-AblyiOSJSPerformanceTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9E6EB3CBDBA5EC9E7898EB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C82EB37C3D266BC86EA097E6 /* Pods_AblyiOSJSPerformanceTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D367DC81203ABD59005ECDF2 = {
+			isa = PBXGroup;
+			children = (
+				D367DC8C203ABD59005ECDF2 /* AblyiOSJSPerformanceTest */,
+				D367DC8B203ABD59005ECDF2 /* Products */,
+				73D55CE4C38E7F7B8B7980F6 /* Pods */,
+				A9E6EB3CBDBA5EC9E7898EB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D367DC8B203ABD59005ECDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D367DC8A203ABD59005ECDF2 /* AblyiOSJSPerformanceTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D367DC8C203ABD59005ECDF2 /* AblyiOSJSPerformanceTest */ = {
+			isa = PBXGroup;
+			children = (
+				D367DCA3203AC092005ECDF2 /* index.html */,
+				D367DC8D203ABD59005ECDF2 /* AppDelegate.h */,
+				D367DC8E203ABD59005ECDF2 /* AppDelegate.m */,
+				D367DC90203ABD59005ECDF2 /* ViewController.h */,
+				D367DC91203ABD59005ECDF2 /* ViewController.m */,
+				D367DC93203ABD59005ECDF2 /* Main.storyboard */,
+				D367DC96203ABD59005ECDF2 /* Assets.xcassets */,
+				D367DC98203ABD59005ECDF2 /* LaunchScreen.storyboard */,
+				D367DC9B203ABD59005ECDF2 /* Info.plist */,
+				D367DC9C203ABD59005ECDF2 /* main.m */,
+			);
+			path = AblyiOSJSPerformanceTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D367DC89203ABD59005ECDF2 /* AblyiOSJSPerformanceTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D367DCA0203ABD59005ECDF2 /* Build configuration list for PBXNativeTarget "AblyiOSJSPerformanceTest" */;
+			buildPhases = (
+				747781B15E04D77123089914 /* [CP] Check Pods Manifest.lock */,
+				D367DC86203ABD59005ECDF2 /* Sources */,
+				D367DC87203ABD59005ECDF2 /* Frameworks */,
+				D367DC88203ABD59005ECDF2 /* Resources */,
+				CBCD7C92565950C11591AB4A /* [CP] Embed Pods Frameworks */,
+				6CE6F48C8998A70C1545D508 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AblyiOSJSPerformanceTest;
+			productName = AblyiOSJSPerformanceTest;
+			productReference = D367DC8A203ABD59005ECDF2 /* AblyiOSJSPerformanceTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D367DC82203ABD59005ECDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Ably;
+				TargetAttributes = {
+					D367DC89203ABD59005ECDF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D367DC85203ABD59005ECDF2 /* Build configuration list for PBXProject "AblyiOSJSPerformanceTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D367DC81203ABD59005ECDF2;
+			productRefGroup = D367DC8B203ABD59005ECDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D367DC89203ABD59005ECDF2 /* AblyiOSJSPerformanceTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D367DC88203ABD59005ECDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367DC9A203ABD59005ECDF2 /* LaunchScreen.storyboard in Resources */,
+				D367DCA4203AC092005ECDF2 /* index.html in Resources */,
+				D367DC97203ABD59005ECDF2 /* Assets.xcassets in Resources */,
+				D367DC95203ABD59005ECDF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CE6F48C8998A70C1545D508 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AblyiOSJSPerformanceTest/Pods-AblyiOSJSPerformanceTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		747781B15E04D77123089914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AblyiOSJSPerformanceTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBCD7C92565950C11591AB4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AblyiOSJSPerformanceTest/Pods-AblyiOSJSPerformanceTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Ably/Ably.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/KSCrashAblyFork/KSCrashAblyFork.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/UIForLumberjack/UIForLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/msgpack/msgpack.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ably.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrashAblyFork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIForLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/msgpack.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AblyiOSJSPerformanceTest/Pods-AblyiOSJSPerformanceTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D367DC86203ABD59005ECDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367DC92203ABD59005ECDF2 /* ViewController.m in Sources */,
+				D367DC9D203ABD59005ECDF2 /* main.m in Sources */,
+				D367DC8F203ABD59005ECDF2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D367DC93203ABD59005ECDF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D367DC94203ABD59005ECDF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D367DC98203ABD59005ECDF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D367DC99203ABD59005ECDF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D367DC9E203ABD59005ECDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D367DC9F203ABD59005ECDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D367DCA1203ABD59005ECDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935FADD1692E2D6220F9088D /* Pods-AblyiOSJSPerformanceTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2CD3DR3GP;
+				INFOPLIST_FILE = AblyiOSJSPerformanceTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyiOSJSPerformanceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D367DCA2203ABD59005ECDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C203DAA9BE468F53B20F4B1 /* Pods-AblyiOSJSPerformanceTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2CD3DR3GP;
+				INFOPLIST_FILE = AblyiOSJSPerformanceTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyiOSJSPerformanceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D367DC85203ABD59005ECDF2 /* Build configuration list for PBXProject "AblyiOSJSPerformanceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D367DC9E203ABD59005ECDF2 /* Debug */,
+				D367DC9F203ABD59005ECDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D367DCA0203ABD59005ECDF2 /* Build configuration list for PBXNativeTarget "AblyiOSJSPerformanceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D367DCA1203ABD59005ECDF2 /* Debug */,
+				D367DCA2203ABD59005ECDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D367DC82203ABD59005ECDF2 /* Project object */;
+}

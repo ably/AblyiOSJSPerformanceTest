@@ -1,0 +1,75 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <body>
+    <button id="publish">Publish a message</button>
+    <br/>
+    <textarea id="log"></textarea>
+  </body>
+
+  <style type="text/css">
+    #log{
+      margin-top: 20px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      width: 100%;
+      height: 80%;
+    }
+  </style>
+
+  <script src="https://cdn.ably.io/lib/ably.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+        console.old = console.log;
+        var logger = document.getElementById('log');
+        console.log = function (message) {
+          console.old(message);
+            if (typeof message == 'object') {
+                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message, null, 4) : message) + '\n';
+            } else {
+              try {
+                var index = message.indexOf('{');
+                var text = message.slice(0,index);
+                var jsonStr = message.slice(index);
+                var messageJson = JSON.parse(jsonStr);
+                message = (JSON && JSON.stringify ? (text + JSON.stringify(messageJson, null, 4)) : message)
+              }
+              catch (e) {}
+                logger.innerHTML += message + '\n';
+            }
+            var textarea = logger;
+            textarea.scrollTop = textarea.scrollHeight;
+        }
+    })();
+
+    var publishTimes = {};
+    var realtime = new Ably.Realtime("YOUR_API_KEY");
+
+    var channel = realtime.channels.get("testing");
+    channel.subscribe(function(msg) {
+      var now = Date.now();
+
+      var fromThisDevice = false;
+      var messageId = msg.data.messageId;
+      if (messageId) {
+        var sentTime = publishTimes[messageId];
+        if (sentTime) {   
+          fromThisDevice = true; 
+          console.log("--------------------------------------");
+          console.log("[Ably] Round-trip delay: "+ (now - sentTime) + "ms");
+          console.log("[Ably] FromJS (localtime - serverTs): " + (now - msg.timestamp) + "ms");
+          console.log("--------------------------------------");
+        }
+      }
+      if (!fromThisDevice) {
+        console.log("[Ably] From iOS (localtime - serverTs): " + (now - msg.timestamp) + "ms");
+      }
+    });
+
+    document.getElementById("publish").addEventListener("click", function() {
+      var messageId = Math.random().toString(36).substring(2);
+      publishTimes[messageId] = Date.now();
+      channel.publish("update", { 'messageId': messageId, "from" : "JS" });
+    })
+  </script>
+</html>

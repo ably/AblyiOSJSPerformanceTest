@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1P9-tn-5nB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ze4-I8-R4F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7q-Ol-8Kr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndl-fn-8Fu">
+                                        <rect key="frame" x="0.0" y="290" width="51" height="30"/>
+                                        <state key="normal" title="Publish"/>
+                                        <connections>
+                                            <action selector="publish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djs-2F-ecz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ndl-fn-8Fu" secondAttribute="bottom" id="5Ym-Br-Sso"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ndl-fn-8Fu" secondAttribute="trailing" constant="20" symbolic="YES" id="cPw-bs-S05"/>
+                                    <constraint firstItem="ndl-fn-8Fu" firstAttribute="leading" secondItem="a7q-Ol-8Kr" secondAttribute="leading" id="laJ-4u-bxJ"/>
+                                    <constraint firstAttribute="height" constant="320" id="okb-eC-eGj"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZv-ta-QeX">
+                                <rect key="frame" x="16" y="328" width="343" height="303"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="303" id="0m0-XC-OYb"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZv-ta-QeX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Djs-3d-2BY"/>
+                            <constraint firstItem="iZv-ta-QeX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="G6i-kB-DGW"/>
+                            <constraint firstItem="a7q-Ol-8Kr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ms6-g8-3Mf"/>
+                            <constraint firstItem="a7q-Ol-8Kr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SkX-Xb-4kB"/>
+                            <constraint firstAttribute="trailing" secondItem="a7q-Ol-8Kr" secondAttribute="trailing" id="iet-Eo-Ova"/>
+                            <constraint firstItem="iZv-ta-QeX" firstAttribute="top" secondItem="a7q-Ol-8Kr" secondAttribute="bottom" constant="8" id="xvI-J7-XP6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="a7q-Ol-8Kr" id="LGa-OY-KkM"/>
+                        <outlet property="publishButton" destination="ndl-fn-8Fu" id="ugX-xZ-yQ8"/>
+                        <outlet property="webView" destination="iZv-ta-QeX" id="HOm-ZP-VD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
