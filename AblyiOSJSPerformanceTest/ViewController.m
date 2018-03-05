@@ -43,7 +43,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
   [self.webView loadHTMLString:htmlString baseURL: [[NSBundle mainBundle] bundleURL]];
   
   ARTClientOptions *options = [[ARTClientOptions alloc] initWithKey:@"YOUR_API_KEY"];
-  options.logLevel = ARTLogLevelVerbose;
+  options.logLevel = ARTLogLevelNone;
   self.realtimeClient = [[ARTRealtime alloc] initWithOptions:options];
   [self.realtimeClient.connection on:^(ARTConnectionStateChange *stateChange) {
     if (!self.realtimeClient) {
@@ -94,13 +94,13 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
       NSDate *sendTime = [self.messages objectForKey:messageId];
       if (sendTime) {
         fromThisDevice = YES;
-        DLog(@"[Ably] Round-trip delay: %f ms", [now timeIntervalSinceDate:sendTime] * 1000);
-        DLog(@"[Ably] From iOS, (localtime - serverTs): %f ms", [now timeIntervalSinceDate:message.timestamp] * 1000);
+        NSLog(@"[Ably] Round-trip delay: %f ms", [now timeIntervalSinceDate:sendTime] * 1000);
+        NSLog(@"[Ably] From iOS, (localtime - serverTs): %f ms", [now timeIntervalSinceDate:message.timestamp] * 1000);
       }
     }
     
     if (!fromThisDevice) {
-      DLog(@"[Ably] From JS, (localtime - serverTs): %f ms", [now timeIntervalSinceDate:message.timestamp] * 1000);
+      NSLog(@"[Ably] From JS, (localtime - serverTs): %f ms", [now timeIntervalSinceDate:message.timestamp] * 1000);
     }
   }];
 }
